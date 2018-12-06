@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formation à la cartographie participative</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joël Gombin, Datactivist" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Formation à la cartographie participative
+## Les Clés de la Cité
+### Joël Gombin, Datactivist
+### 6 décembre 2018
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Formation à la cartographie&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : http://datactivist.coop/carto
+
+Sources : https://github.com/datactivist/carto
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+---
+## Qui sommes nous ?
+
+&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+[![](https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png)](https://datactivist.coop)
+
+### We .red[open data], we make them .red[useful]
+
+---
+## Qui sommes nous ?
+
+
+![](https://www.dropbox.com/s/kicm8kmqal303yc/equipe.jpg?dl=1)
+
+---
+## Qui sommes nous ?
+
+- Datactivist est un .red[**pure player de l’open data**] créé en 2016, par Samuel Goëta et Joël Gombin.
+
+- Se positionnant sur .red[**toutes les étapes du travail d’ouverture des données**], Datactivist travaille tant avec les producteurs de données qu’avec les réutilisateurs et participe à l’appropriation des données par chacun.
+
+- Nous appliquons nos propres .red[**valeurs**] : nous sommes une coopérative ; nos supports de formation et nos contenus sont librement réutilisables, publiés en licence Creative Commons.
+
+- Une approche issue de la recherche : voir notamment **https://datactivist.coop/these**. 
+
+- Nous animons la communauté [#TeamOpenData](https://teamopendata.org).
+
+---
+## Nos activités
+
+- Conseil sur les .red[**stratégies d’ouverture de données**] : nous aidons les organisations dans la conception et la mise en œuvre de leur stratégie d’ouverture de données.
+
+
+- .red[**Accompagnement dans la réutilisation de données ouvertes**] : nous aidons les organisations à utiliser les données au quotidien. 
+
+- .red[**Sensibilisation et formation à la donnée**] : nous formons à la culture générale des données, nous enseignons les grands principes et bonnes pratiques de l'open data et nous introduisons à la data science. 
+
+- .red[**Médiation de données**] : nous organisons des hackathons, des open data camps, des expéditions de données...
+
+???
+
+La médiation de données est aussi fondamentalement une animation de communauté(s). 
+
+---
+## Pourquoi cartographier ? 
+
+Au départ... cartographier est un projet de puissance ! 
+
+.center[![La géographie ça sert d'abord à faire la guerre](./img/lacoste.jpg)]
+
+---
+## Pourquoi cartographier ? 
+
+La cartgraphie est aussi un outil de savoir et de compréhension : il permet d'appréhender le monde et, plus précisément, d'explorer la dimension spatiale des phénomènes physiques ou sociaux.
+
+---
+## Pourquoi cartographier ? 
+
+Enfin, la cartographie peut être un outil militant (voir https://neocarto.hypotheses.org/category/cartographie-radicale par exemple) et d'émancipation, d'appropriation d'un territoire vécu voir par exemple https://alterites.hypotheses.org/373). 
+
+---
+## Qu'est-ce qu'une carte ?
+
+&gt; "Une carte est une représentation géométrique plane simplifiée et conventionnelle de tout ou partie de la surface terrestre, et cela dans un rapport de similitude convenable qu'on appelle échelle." (F. Joly, 1976)
+
+
+Référence : [Béguin et Pumain, 2014 (3e éd.)](http://www.persee.fr/web/revues/home/prescript/article/espos_0755-7809_1998_num_16_1_1827_t1_0119_0000_2)
+
+---
+## La notion de projection
+
+La projection est l'outil mathématique qui permet de passer du géoïde représentant la Terre à une représentation plane. 
+
+Projections conformes (Mercator, Lambert) ou équivalentes (Eckert IV, Gall). Il y a toujours une déformation !
+
+Les coordonnées géographiques sont exprimées en longitude et latitude. Les unités peuvent être des degrés ou des grades. La projection transforme les coordonnées géographiques en coordonnées x/y. 
+
+
+---
+
+&lt;iframe width='800' height='600' src='https://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e'&gt;&lt;/iframe&gt;
+
+---
+class: center, middle
+
+&lt;iframe width="800" height="450" src="https://www.youtube.com/embed/vVX-PrBRtTY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+## L'échelle
+
+L'échelle d'une carte représente le rapport d'une distance mesurée sur la carte à sa valeur réelle sur le terrain.
+
+Échelle        | 1 cm représente
+---------------|----------------
+1/10000        |100 m
+1/25000        |250m
+1/50000        |500m
+1/100000       |1km
+1/1000000      |10km
+
+---
+## L'échelle 
+
+Attention : "petite échelle" = grande superficie représentée
+"grande échelle" = petite superficie représentée
+
+L'échelle est déformée à distance du centre de projection (équateur pour Mercator)
+
+Échelle numérique et échelle graphique
+
+---
+class: center, middle
+
+&lt;img src='./img/carteParis1.png'/&gt;
+
+---
+## La généralisation 
+
+"L'opération qui par sélection, schématisation et harmonisation reconstitue sur une carte la réalité de la surface représentée dans ses traits essentiels en fonction du but de la carte, de son thème, de son échelle et des particularités de la région cartographiée."
+
+---
+## La sélection 
+
+Quelles couches d'information représenter ? Ni trop (surcharge d'information, à la Google Maps) ni trop peu (rendre la carte intelligible au lecteur).
+
+.center[![une carte](./img/carteParis1.png)]
+
+---
+## La schématisation 
+
+Opération de simplification, qui peut être structurale (tracés) ou conceptuelle (schéma). Attention : on peut simplifier à partir de données détaillées, mais on ne peut pas faire l'inverse ! Donc toujours veiller à conserver les données dans leur forme la plus détaillée. 
+
+---
+## Le fond de carte 
+
+Le fond de carte est constitué des éléments repris d'une carte topographique (par exemple de l'IGN) et utilisés pour une carte thématique.
+
+"Carte reproduite totalement ou partiellement, en une ou plusieurs couleurs souvent atténuées, servant de repère pour le report en surcharge de phénomènes localisables déterminés" (CFC). Peut concerner les découpages administratifs, le réseau routier, hydrographique, les courbes de niveau, etc. 
+
+---
+## Les sources de fonds de carte 
+
+Traditionnellement, en France : l'IGN.
+
+De plus en plus : Google Maps, Open Street Map, Stamen...
+
+.center[&lt;iframe src='https://maps.stamen.com/toner/#12/48.8974/2.2017' width='400' height='300'&gt;&lt;/iframe&gt;]
+
+---
+class: middle, center
+
+&lt;iframe src='https://maps.stamen.com/watercolor/#12/48.8974/2.2017' width='400' height='500'&gt;&lt;/iframe&gt;
+
+---
+## Vecteur ou raster 
+
+Comment stocker et représenter l'information géographique ?
+
+- "Mode raster" : il s'agit d'une image, découpée en pixels. Des valeurs sont attribués aux pixels. Ex : photo satellite.
+- "Mode vecteur" : on utilise des objets géométriques (lignes, points, polygones...) auxquels sont associés des attributs. Ex : carte d'un réseau de transports.
+
+---
+class: middle, center
+
+&lt;iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.2066426277160645%2C48.90106358992757%2C2.2182297706604004%2C48.907142665829795&amp;amp;layer=mapnik" style="border: 1px solid black"&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;small&gt;&lt;a href="http://www.openstreetmap.org/#map=17/48.90410/2.21244"&gt;Voir la carte&lt;/a&gt;&lt;/small&gt;
+
+---
+class: middle, center
+
+&lt;iframe src='https://www.comeetie.fr/galerie/francepixels/#' width="425" height="300"&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;small&gt;&lt;a href="https://www.comeetie.fr/galerie/francepixels/#"&gt;Voir la carte&lt;/a&gt;&lt;/small&gt;
+
+---
+## Cartes choroplèthes 
+
+Une carte choroplèthe est une carte thématique où les régions sont colorées ou remplies d'un motif qui montre une mesure statistique, tels la densité de population ou le revenu par habitant. Ce type de carte facilite la comparaison d'une mesure statistique d'une région à l'autre ou montre la variabilité de celle-ci pour une région donnée.
+
+---
+## Cartes en anamorphose ou cartogramme 
+
+"La cartographie en anamorphose a pour but d´adapter la forme de la carte non pas à la réalité physique mais plutôt à la réalité perçue." [(Langlois et Denain, 1996)](http://cybergeo.revues.org/129) 
+
+On déforme le fond de carte en fonction d'une variable quantitative (voire arbitrairement).
+
+---
+class: middle, center
+
+&lt;iframe src='https://prag.ma/code/d3-cartogram/?segmentized#intlmig/2010' width='500' height='400'&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;small&gt;&lt;a href="https://prag.ma/code/d3-cartogram/?segmentized#intlmig/2010"&gt;Voir la source&lt;/a&gt;&lt;/small&gt;
+
+---
+class: middle, center
+
+&lt;img src='./img/carte2.png' align='center'/&gt;
+
+---
+class: inverse, center, middle
+
+# OpenStreetMap
+
+---
+## C'est quoi, OpenStreetMap ?
+
+Une alternative à Google Maps ?
+
+Le Wikipedia de la carte ? 
+
+Ce qu'en dit [Wikipedia](https://fr.wikipedia.org/wiki/OpenStreetMap) :
+
+&gt; un projet de cartographie qui a pour but de constituer une base de données géographiques libre du monde
+
+Un véritable commun numérique, non appropriable (licence [ODbL](https://www.opendatacommons.org/licenses/odbl/)) et [gouverné par sa communauté](https://teamopendata.org/t/openstreetmap-48h-pour-adherer-a-la-fondation-et-re-equilibrer-sa-gouvernance/880).
+
+De multiples projets connexes : [Mapillary](https://www.mapillary.com/) (StreetView libre - voir l'exemple de [Digne](https://www.horizonspublics.fr/territoires/open-data-digne-les-bains-joue-collectif)), [BAN](https://adresse.data.gouv.fr/)/BANO par exemple.
+
+---
+## C'est quoi, OpenStreetMap ?
+
+La dimension fondamentale d'OpenStreetMap : il s'agit d'un projet collaboratif et contributif, auquel tout un chacun peut, à sa mesure, contribuer - via des [cartoparties](https://cartopen.com/le-projet-openstreetmap/contribuer-a-openstreetmap) par exemple.
+
+.center[[![historique d'édition OSM autour de la rue d'Aubagne](./img/edit.png)](https://tyrasd.github.io/latest-changes/#19/43.29406/5.38147)]
+
+---
+## C'est quoi, OpenStreetMap ?
+
+.center[[![](./img/mescontribs.png)](https://www.openstreetmap.org/user/Joel%20Gombin/history#map=14/43.3438/5.4440)]
+
+---
+
+## Petite histoire d'OSM
+
+.pull-left[
+
+* 2004 : lancement par Steve Coast
+
+* Fin 2005 : 1000 usagers
+
+* Aout 2006 : création de la fondation OpenStreetMap
+
+* Décembre 2006 : ajout des images satellite de Yahoo
+
+* Janvier 2013 : 1 million de contributeurs
+
+* Mai 2013 : possibilité de contribuer directement depuis le site
+
+* Mai 2015 : 2 millions de contributeurs
+]
+.pull-right[
+![](./img/users.png)]
+
+---
+## Comment collecter des données sur le terrain ?
+.reduite[![](./img/entree.png)]
+
+---
+## Comment soumettre des données ?
+.reduite[![](./img/soum.png)]
+
+---
+## Utiliser OpenStreetMap
+
+- la carte du monde : https://www.openstreetmap.org
+- faire une contribution spécifique : https://www.mapcontrib.xyz/
+- utiliser des fonds de carte OSM : http://next.openstreetmap.fr/fonds-de-carte/
+- utiliser une appli OSM sur mobile : https://www.openstreetmap.fr/gps-applications-de-navigation/
+
+---
+class: inverse, middle, center
+
+# Savoir réaliser une carte
+
+---
+## Outils cartographiques
+
+Traditionnellement, on fait des cartes avec des outils de SIG (ArcGis, MapInfo, QGIS...) ou purement cartographique (PhilCarto...).
+
+Depuis l'avènement du [geoweb](https://geoviz.sciencesconf.org/data/pages/Visualisation_de_donnees_spatiales_sur_le_Web.pdf), on peut utiliser des outils en ligne, tels que Google Maps, mais aussi Umap, Khartis, Carto... ou encore Mapbox, TileMill, Jawg.io... ou kepler.gl
+
+---
+## Outils cartographiques
+
+Que choisir ?
+
+Quand on n'est pas expert :
+
+- carte à destination du web, représentation de figurés ponctuels, linéaires etc. =&gt; plutôt Umap
+
+- carte d'analyse, choroplèthe notamment, à partir d'une trame administrative =&gt; plutôt Khartis
+
+---
+## Khartis
+
+RDV sur http://www.sciencespo.fr/cartographie/khartis/app
+
+Utiliser par exemple ces données : https://trouver.datasud.fr/dataset/population-par-commune-et-tranche-dage-en-region-provence-alpes-cote-dazur-en-2013-indicateur
+
+[Résultat attendu](http://www.sciencespo.fr/cartographie/khartis/app/graph/1cu134g2i0/layer/1cu1357ir2/edit)
+
+---
+## Umap
+
+RDV sur https://umap.openstreetmap.fr/fr/
+
+Utiliser par exemple ces données : 
+(merci à Charles Népote pour les données : https://gist.github.com/CharlesNepote/9806b459d5f7ee671681e55b35cb0a81)
+
+
+---
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [joel@datactivist.coop](mailto:joel@datactivist.coop)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
