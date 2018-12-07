@@ -343,6 +343,104 @@ RDV sur https://umap.openstreetmap.fr/fr/
 Utiliser par exemple ces données : https://github.com/datactivist/carto/blob/master/data/velo.geojson
 (merci à Charles Népote pour les données : https://gist.github.com/CharlesNepote/9806b459d5f7ee671681e55b35cb0a81)
 
+---
+class: inverse, center, middle
+
+# Extraire des données d'OpenStreetMap
+
+---
+## Les objets d'OpenStreetMap
+.reduite[![](img/nodes.png)]
+.footnote[CC BY-SA esambale on slideshare]
+
+---
+## Un monde de tags
+.reduite[.center[![](img/tags.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+
+---
+## Le principe d'un tag : KEY=VALUE
+.reduite2[.center[![](img/keyvalue.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+
+---
+## « Elements cartographiques » : la bible des tags
+.reduite2[.center[[![](img/mapfeature.png)](http://wiki.openstreetmap.org/wiki/FR:Éléments_cartographiques)]]
+.footnote[http://wiki.openstreetmap.org/wiki/FR:Éléments_cartographiques]
+
+---
+## Comment cartographier un...
+.reduite[.center[![comment](img/comment.png)]]
+.footnote[[Lien vers la page wiki](http://wiki.openstreetmap.org/wiki/FR:Comment_cartographier_un..)]
+
+---
+
+## Exercice : trouver les tags suivants
+
+.pull-left[
+
+1. Autoroute 
+
+2. Piste cyclable
+
+3. Musée
+
+4. Aéroport
+
+5. Boulangerie
+
+]
+
+---
+
+## Solution : trouver les tags suivants
+
+.pull-left[
+
+1. Autoroute 
+
+2. Piste cyclable
+
+3. Musée
+
+4. Aéroport
+
+5. Boulangerie
+]
+.pull-right[
+1. Highway=motorway 
+
+2. highway=cycleway ou cycleway=*
+
+3. Tourism=museum
+
+4. Aeroway=aerodrome
+
+5. Shop=bakery]
+
+---
+
+## Découverte d'Overpass
+.reduite[![](img/overpass.png)]
+.footnote[http://overpass-turbo.eu]
+
+---
+## Exercice : cartographier les éléments suivants
+
+
+* Les boulangeries à Angers
+
+* Les pistes cyclables à Auxerre
+
+* Les aéroports en Bourgogne
+
+* Les boites aux lettres à Aix en Provence 
+
+**Plus dur :**
+
+* Les lignes électriques en corse
+
+* Les « potelets » à Marseille
 
 ---
 class: inverse, center, middle
